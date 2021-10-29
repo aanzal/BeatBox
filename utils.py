@@ -188,16 +188,12 @@ async def upload(m, bot, chat_id, dir):
     await m.unpin()
     await bot.send_message(
         chat_id=chat_id,
-        text=f"Succesfully Uploaded {up} Files to Telegram.\nIf you found me helpfull Join My Updates Channel",
+        text=f"Succesfully Uploaded {up} Files to Telegram.",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-					InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/subinps'),
-					InlineKeyboardButton("🤖Other Bots", url="https://t.me/subin_works/122")
-				],
-				[
-					InlineKeyboardButton("🔗Source Code", url="https://github.com/subinps/Instagram-Bot"),
-                    InlineKeyboardButton("⚡️Update Channel", url="https://t.me/subin_works")
+					InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/axnzal'),
+					InlineKeyboardButton("🔗 Instagram", url="http://www.instagram.com/mhd.anzal")
 				]
 			]
 			)
