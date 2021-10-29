@@ -1,16 +1,4 @@
 # Instagram Manager Bot
-The most advanced Instagram Downloader Bot.
-
-```
-Please fork this repository don't import code
-Made with Python3
-(C) @subinps
-Copyright permission under MIT License
-License -> https://github.com/subinps/Instagram-Bot/blob/main/LICENSE
-```
-
-
-You can Download almost anything From your Instagram Account.
 
 **What Can Be Downloaded?:**
 ```
@@ -69,8 +57,7 @@ Example: /followers samantharuthprabhuoffl
 
 ```
 
-### Deploy to Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/subinps/Instagram-Bot)
+## Deploy to Heroku
 
 <details><summary>Deploy To Heroku</summary>
 <p>
