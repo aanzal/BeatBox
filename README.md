@@ -72,22 +72,15 @@ Example: /followers samantharuthprabhuoffl
 ### Deploy to Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/subinps/Instagram-Bot)
 
-Watch This [Video](https://youtu.be/aVkmoVPSOYI) Tutorial For Better Understanding.
+<details><summary>Deploy To Heroku</summary>
+<p>
+<br>
+<a href="https://heroku.com/deploy?template=https://github.com/aanzal/Instagram-Bot">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
+</p>
+</details>
 
-While Deploying fill `INSTA_SESSIONFILE_ID`, either by running [generate_instagram_session.py](https://github.com/subinps/Instagram-Bot/blob/main/generate_instagram_session.py]) in terminal or using /login after deploy or use [repl.it](https://replit.com/@subinps/generateInstagramSession)
-
-For Generating Session after deployment, You Must leave the Variable as blank and fill manually after generating `INSTA_SESSIONFILE_ID` from your bot by sending /login.
-
-
-### Deploy to VPS
-
-```sh
-git clone https://github.com/subinps/Instagram-Bot
-cd Instagram-Bot
-pip3 install -r requirements.txt
-# <Create Variables appropriately>
-python3 main.py
-```
 
 ### Variables
 
@@ -98,24 +91,3 @@ python3 main.py
 * `INSTAGRAM_USERNAME` Your Instagram username
 * `INSTA_SESSIONFILE_ID` Your Instagram session file ID. Generate either by running [generate_instagram_session.py](https://github.com/subinps/Instagram-Bot/blob/main/generate_instagram_session.py]) in terminal or using /login after deploy or use [repl.it](https://replit.com/@subinps/generateInstagramSession)
 
-
-### Note
-
-```
-Contributions are welcomed, But Kanging and editing a few lines wont make you a Developer.
-Fork the repo, Do not Import code.
-
-```
-
-#### Support
-
-Connect Me On [Telegram](https://telegram.dog/subinps_bot)
-
-
-```
-LEGAL DISCLAIMER
-
-Developer or his team won't be liable for any loss caused by MISUSE of this Script.
-This Bot is Indended to be used only for Educational Purposes.
-
-```
