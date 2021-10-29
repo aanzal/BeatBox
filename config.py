@@ -19,9 +19,8 @@ class Config:
 
 This is a bot of [{}](www.instagram.com/{}) to manage his Instagram account. 
 I can only work for my master [{}](tg://user?id={}).
-But you can Deploy the same bot for your use from the below source code.
-
-Use /help to know What I can Do?</b>
+So, ThankYou
+ആരും കണ്ടിട്ടില്ല...ഓടിക്കോ 🏃🏻‍♂️</b>
 """
     HOME_TEXT_OWNER = """
 <b>മൊയ്‌ലാളീ, [{}](tg://user?id={})
