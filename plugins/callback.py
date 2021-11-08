@@ -53,8 +53,7 @@ async def cb_handler(bot: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
 			[
 				[
-					InlineKeyboardButton("🌬 Group", url='https://t.me/CinemaGround'),
-					InlineKeyboardButton("📣 Channel", url="https://t.me/CineGround")
+					InlineKeyboardButton("🔝 Developer", url='https://t.me/axnzal')
 				]
 			]
 			)
