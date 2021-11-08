@@ -45,7 +45,7 @@ async def login(bot, message):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton('CLOSE 🗑', callback_data='close_data')
+						InlineKeyboardButton("🔝 Developer", url='https://t.me/axnzal')
 					]					
 				]
 			)
@@ -163,7 +163,7 @@ async def logout(bot, message):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton('CLOSE 🗑', callback_data='close_data')
+						InlineKeyboardButton("🔝 Developer", url='https://t.me/axnzal')
 					]					
 				]
 			)
