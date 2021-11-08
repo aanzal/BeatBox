@@ -43,8 +43,8 @@ async def start(bot, cmd):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🌬 Group", url='https://t.me/CinemaGround'),
-						InlineKeyboardButton("📣 Channel", url="https://t.me/CineGround")
+						InlineKeyboardButton("🔝 Developer", url='https://t.me/axnzal'),
+						InlineKeyboardButton('CLOSE 🗑', callback_data='close_data')
 					]
 					
 				]
@@ -57,8 +57,7 @@ async def start(bot, cmd):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🌬 Group", url='https://t.me/CinemaGround'),
-						InlineKeyboardButton("📣 Channel", url="https://t.me/CineGround")
+						InlineKeyboardButton('CLOSE 🗑', callback_data='close_data')
 					]
 					
 				]
@@ -74,8 +73,7 @@ async def help(bot, cmd):
 		reply_markup=InlineKeyboardMarkup(
 			[
 				[
-					InlineKeyboardButton("🌬 Group", url='https://t.me/CinemaGround'),
-					InlineKeyboardButton("📣 Channel", url="https://t.me/CineGround")
+						InlineKeyboardButton('CLOSE 🗑', callback_data='close_data')
 				]
 			]
 			)
@@ -90,8 +88,8 @@ async def stop(bot, cmd):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🌬 Group", url='https://t.me/CinemaGround'),
-						InlineKeyboardButton("📣 Channel", url="https://t.me/CineGround")	
+						InlineKeyboardButton("🔝 Developer", url='https://t.me/axnzal'),
+						InlineKeyboardButton('CLOSE 🗑', callback_data='close_data')	
 					]
 					
 				]
@@ -99,9 +97,9 @@ async def stop(bot, cmd):
 		)
 		return
 	msg = await bot.send_message(
-		text="Restarting your bot..",
+		text="Re-starting INSTAGRAM.",
 		chat_id=cmd.from_user.id
 		)
 	await asyncio.sleep(2)
-	await msg.edit("All Processes Stopped and Restarted")
+	await msg.edit("All Processes Stopped & Re-started INSTAGRAM.")
 	os.execl(sys.executable, sys.executable, *sys.argv)
