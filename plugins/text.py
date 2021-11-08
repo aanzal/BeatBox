@@ -47,9 +47,7 @@ async def account(bot, message):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🌬 Group", url='https://t.me/CinemaGround'),
-						InlineKeyboardButton("📣 Channel", url="https://t.me/CinemaGround"),
-                        
+						InlineKeyboardButton('CLOSE 🗑', callback_data='close_data')
 					]					
 				]
 			)
@@ -119,9 +117,7 @@ async def _insta_post_batch(bot, message):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🌬 Group", url='https://t.me/CinemaGround'),
-						InlineKeyboardButton("📣 Channel", url="https://t.me/CinemaGround"),
-                        
+						InlineKeyboardButton('CLOSE 🗑', callback_data='close_data')
 					]
 				]
 			)
@@ -134,7 +130,7 @@ async def _insta_post_batch(bot, message):
     chat_id= message.from_user.id
     username=message.text
     if "https://instagram.com/stories/" in username:
-        await m.edit("Stories from links are not yet supported🥴\n\nYou can download stories from Username.")
+        await m.edit("Stories from links are not yet supported.\n\n@axnzal.")
         return
 
     link = r'^https:\/\/www\.instagram\.com\/(p|tv|reel)\/([A-Za-z0-9\-_]*)'
