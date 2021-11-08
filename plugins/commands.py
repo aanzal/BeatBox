@@ -43,8 +43,7 @@ async def start(bot, cmd):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🔝 Developer", url='https://t.me/axnzal'),
-						InlineKeyboardButton('CLOSE 🗑', callback_data='close_data')
+						InlineKeyboardButton("🔝 Developer", url='https://t.me/axnzal')
 					]
 					
 				]
@@ -57,7 +56,7 @@ async def start(bot, cmd):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton('CLOSE 🗑', callback_data='close_data')
+						InlineKeyboardButton("🔝 Developer", url='https://t.me/axnzal')
 					]
 					
 				]
@@ -73,7 +72,7 @@ async def help(bot, cmd):
 		reply_markup=InlineKeyboardMarkup(
 			[
 				[
-						InlineKeyboardButton('CLOSE 🗑', callback_data='close_data')
+						InlineKeyboardButton("🔝 Developer", url='https://t.me/axnzal')
 				]
 			]
 			)
@@ -88,8 +87,7 @@ async def stop(bot, cmd):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🔝 Developer", url='https://t.me/axnzal'),
-						InlineKeyboardButton('CLOSE 🗑', callback_data='close_data')	
+						InlineKeyboardButton("🔝 Developer", url='https://t.me/axnzal')
 					]
 					
 				]
