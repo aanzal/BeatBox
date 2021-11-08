@@ -47,7 +47,7 @@ async def account(bot, message):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton('CLOSE 🗑', callback_data='close_data')
+						InlineKeyboardButton("🔝 Developer", url='https://t.me/axnzal')
 					]					
 				]
 			)
@@ -117,7 +117,7 @@ async def _insta_post_batch(bot, message):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton('CLOSE 🗑', callback_data='close_data')
+						InlineKeyboardButton("🔝 Developer", url='https://t.me/axnzal')
 					]
 				]
 			)
