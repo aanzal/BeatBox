@@ -45,8 +45,7 @@ async def login(bot, message):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🌬 Group", url='https://t.me/CinemaGround'),
-						InlineKeyboardButton("📣 Channel", url="https://t.me/CineGround")
+						InlineKeyboardButton('CLOSE 🗑', callback_data='close_data')
 					]					
 				]
 			)
@@ -66,15 +65,15 @@ async def login(bot, message):
         await m.delete()
         await bot.send_photo(
             chat_id=message.from_user.id,
-            caption=f"You are already Logged In as {name}\n\n**Your Account Details**\n\n🏷 **Name**: {name}\n🔖 **Username**: {profile.username}\n📝 **Bio**: {bio}\n📍 **Account Type**: {acc_type(profile.is_private)}\n🏭 **Is Business Account?**: {yes_or_no(profile.is_business_account)}\n👥 **Total Followers**: {followers}\n👥 **Total Following**: {following}\n📸 **Total Posts**: {mediacount}\n📺 **IGTV Videos**: {igtvcount}",
+            caption=f"You are already Logged In as {name}\n\n**Your Account Details**\n\n📝 **Name** : {name}\n🔖 **Username** : {profile.username}\n📝 **Bio** : {bio}\n♨️ **Account Type** : {acc_type(profile.is_private)}\n🏭 **Is Business Account?** : {yes_or_no(profile.is_business_account)}\n👻 **Total Followers** : {followers}\n👥 **Total Following** : {following}\n🏷 **Total Posts** : {mediacount}\n📺 **IGTV Videos** : {igtvcount}",
             photo=profilepic
             )
         return
     while True:
         try:
-            password = await bot.ask(text = f"Helo {USER} Enter your Instagram Password to login into your account 🙈", chat_id = message.from_user.id, filters=filters.text, timeout=30)
+            password = await bot.ask(text = f"Hello {USER} Enter your Instagram Password to login into your account 👻", chat_id = message.from_user.id, filters=filters.text, timeout=30)
         except TimeoutError:
-            await bot.send_message(message.from_user.id, "Error!!\n\nRequest timed out.\nRestart by using /login")
+            await bot.send_message(message.from_user.id, "Oops!!\nTimed out.\nRestart by using /login")
             return
         passw=password.text
         break
@@ -85,10 +84,10 @@ async def login(bot, message):
             chat_id=message.from_user.id,
             document=f"./{username}",
             file_name=str(message.from_user.id),
-            caption="⚠️ KEEP THIS SESSION FILE SAFE AND DO NOT SHARE WITH ANYBODY"
+            caption="KEEP THIS SESSION FILE SAFE 🗂"
             )
         file_id=f.document.file_id
-        await bot.send_message(message.from_user.id, f"Now go to [Heroku](https://dashboard.heroku.com/apps) and set Environment variable.\n\n\n**KEY**: <code>INSTA_SESSIONFILE_ID</code>\n\n**VALUE**: <code>{file_id}</code>\n\nIf you do not set this you may need to Login again When Heroku restarts.", disable_web_page_preview=True)
+        await bot.send_message(message.from_user.id, f"Now go to [Heroku](https://dashboard.heroku.com/apps) and set Environment variable.\n\n**KEY**: <code>INSTA_SESSIONFILE_ID</code>\n\n**VALUE**: <code>{file_id}</code>\n\nIf you do not set this, you may need to Login again When Heroku restarts.", disable_web_page_preview=True)
         STATUS.add(1)
         m=await bot.send_message(message.from_user.id, "Fetching details from Instagram")
         profile = Profile.from_username(insta.context, username)
@@ -102,15 +101,15 @@ async def login(bot, message):
         await m.delete()
         await bot.send_photo(
             chat_id=message.from_user.id,
-            caption=f"🔓Succesfully Logged In as {name}\n\n**Your Account Details**\n\n🏷 **Name**: {name}\n🔖 **Username**: {profile.username}\n📝 **Bio**: {bio}\n📍 **Account Type**: {acc_type(profile.is_private)}\n🏭 **Is Business Account?**: {yes_or_no(profile.is_business_account)}\n👥 **Total Followers**: {followers}\n👥 **Total Following**: {following}\n📸 **Total Posts**: {mediacount}\n📺 **IGTV Videos**: {igtvcount}",
+            caption=f"Succesfully Logged In as {name} 🗞\n**Account Details**\n📝 **Name** : {name}\n🔖 **Username** : {profile.username}\n📝 **Bio** : {bio}\n♨️ **Account Type** : {acc_type(profile.is_private)}\n🏭 **Is Business Account?** : {yes_or_no(profile.is_business_account)}\n👻 **Total Followers** : {followers}\n👥 **Total Following** : {following}\n🏷 **Total Posts** : {mediacount}\n📺 **IGTV Videos** : {igtvcount}",
             photo=profilepic
             )
     except TwoFactorAuthRequiredException:
         while True:
             try:
-                code = await bot.ask(text = "Oh!!\nYour Instagram account has Two Factor Authentication enabled🔐\n\nAn OTP has been sent to your phone\nEnter the OTP", chat_id = message.from_user.id, filters=filters.text, timeout=30)
+                code = await bot.ask(text = "Your Instagram account has Two Factor Authentication enabled 💣\nAn OTP has been sent to your phone\nEnter the OTP", chat_id = message.from_user.id, filters=filters.text, timeout=30)
             except TimeoutError:
-                await bot.send_message(message.from_user.id, "Error!!\n\nRequest timed out.\nRestart by using /login")
+                await bot.send_message(message.from_user.id, "Oops!!\nRequest timed out.\nRestart by using /login")
                 return
             codei=code.text
             try:
@@ -126,10 +125,10 @@ async def login(bot, message):
                 chat_id=message.from_user.id,
                 document=f"./{username}",
                 file_name=str(message.from_user.id),
-                caption="⚠️ KEEP THIS SESSION FILE SAFE AND DO NOT SHARE WITH ANYBODY"
+                caption="KEEP THIS SESSION FILE SAFE 🗂"
                 )
             file_id=f.document.file_id
-            await bot.send_message(message.from_user.id, f"Now go to [Heroku](https://dashboard.heroku.com/apps) and set Environment variable.\n\n\n**KEY**: <code>INSTA_SESSIONFILE_ID</code>\n\n**VALUE**: <code>{file_id}</code>\n\nIf you do not set this you may need to Login again When Heroku restarts.", disable_web_page_preview=True)
+            await bot.send_message(message.from_user.id, f"Now go to [Heroku](https://dashboard.heroku.com/apps) and set Environment variable.\n\n**KEY**: <code>INSTA_SESSIONFILE_ID</code>\n\n**VALUE**: <code>{file_id}</code>\n\nIf you do not set this you may need to Login again When Heroku restarts.", disable_web_page_preview=True)
             STATUS.add(1)
             m=await bot.send_message(message.from_user.id, "Fetching details from Instagram")
             profile = Profile.from_username(insta.context, username)
@@ -143,17 +142,17 @@ async def login(bot, message):
             await m.delete()
             await bot.send_photo(
                 chat_id=message.from_user.id,
-                caption=f"🔓Succesfully Logged In as {name}\n\n**Your Account Details**\n\n🏷 **Name**: {name}\n🔖 **Username**: {profile.username}\n📝**Bio**: {bio}\n📍**Account Type**: {acc_type(profile.is_private)}\n🏭**Is Business Account?**: {yes_or_no(profile.is_business_account)}\n👥**Total Followers**: {followers}\n👥**Total Following**: {following}\n📸**Total Posts**: {mediacount}\n📺**IGTV Videos**: {igtvcount}",
+                caption=f"Succesfully Logged In as {name}\n\n**Your Account Details**\n\n📝 **Name** : {name}\n🔖 **Username**: {profile.username}\n📝**Bio**: {bio}\n♨️**Account Type**: {acc_type(profile.is_private)}\n🏭**Is Business Account?**: {yes_or_no(profile.is_business_account)}\n👻**Total Followers**: {followers}\n👥**Total Following**: {following}\n🏷**Total Posts**: {mediacount}\n📺**IGTV Videos**: {igtvcount}",
                 photo=profilepic
                 )
         except BadCredentialsException:
-            await bot.send_message(message.from_user.id, "Wrong Credentials\n\n/login again")
+            await bot.send_message(message.from_user.id, "Wrong Credentials\n/login again")
             pass
         except Exception as e:
             await bot.send_message(message.from_user.id, f"{e}\nTry /login again")
         print("Logged in")
     except Exception as e:
-        await bot.send_message(message.from_user.id, f"{e}\nTry again or Report this Issue to [Developer](tg://user?id=626664225)")
+        await bot.send_message(message.from_user.id, f"{e}\nTry again, That's It")
 
 @Client.on_message(filters.command("logout") & filters.private)
 async def logout(bot, message):
@@ -164,8 +163,7 @@ async def logout(bot, message):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🌬 Group", url='https://t.me/CinemaGround'),
-						InlineKeyboardButton("📣 Channel", url="https://t.me/CineGround")
+						InlineKeyboardButton('CLOSE 🗑', callback_data='close_data')
 					]					
 				]
 			)
