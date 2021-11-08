@@ -18,12 +18,10 @@ class Config:
 <b>Hello, [{}](tg://user?id={})
 
 This is a bot of [{}](www.instagram.com/{}) to manage his Instagram account. 
-I can only work for my master [{}](tg://user?id={}).
-So, ThankYou
-ആരും കണ്ടിട്ടില്ല...ഓടിക്കോ 🏃🏻‍♂️</b>
+I can only work for my master [{}](tg://user?id={}). You don't need to waste your time by being here! You get nothing.
+So, ThankYou.</b>
 """
     HOME_TEXT_OWNER = """
-<b>മൊയ്‌ലാളീ, [{}](tg://user?id={})
-ഇന്ന് എന്താ നോക്കണ്ടേ ?</b>
+<b>Do whatever! I'm Yours..[{}](tg://user?id={})</b>
 """
 
