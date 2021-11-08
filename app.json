@@ -1,6 +1,6 @@
 {
     "name": "Instagram-Bot",
-    "description": "Telegram bot to manage your Instagram account.",
+    "description": "Telegram bot.",
     "keywords": [
       "telegram",
       "best",
@@ -11,27 +11,27 @@
     "repository": "https://github.com/aanzal/Instagram-Bot",
     "env": {
       "API_ID": {
-        "description": "Get this value from https://my.telegram.org",
+        "description": "Get this Value.",
         "value": ""
       },
       "API_HASH": {
-        "description": "Get this value from https://my.telegram.org",
+        "description": "Get this Value.",
         "value": ""
       },
       "BOT_TOKEN": {
-        "description": "Your bot token from @BotFather",
+        "description": "Your bot token.",
         "value": ""
       },
       "OWNER_ID": {
-        "description": "Enter Your Telegram id",
+        "description": "Telegram id.",
         "value": ""
       },
       "INSTAGRAM_USERNAME": {
-        "description": "Enter your Instagram Username without @ , Example: samantharuthprabhuoffl",
+        "description": "Instagram Username without @",
         "value": ""
       },
       "INSTA_SESSIONFILE_ID": {
-        "description": "Read README in GitHub",
+        "description": "Get this Value.",
         "value": "",
         "required": false
       }
