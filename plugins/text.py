@@ -54,7 +54,7 @@ async def account(bot, message):
 		)
         return
     if 1 in STATUS:
-        m=await message.reply_text("Getting Your data")
+        m=await message.reply_text("Getting Your data...")
         try:
             profile = Profile.own_profile(insta.context)
             mediacount = profile.mediacount
@@ -98,7 +98,7 @@ async def account(bot, message):
             await bot.send_photo(
                         chat_id=message.from_user.id,
                         photo=profilepic,
-                        caption=f"🏷 **Name**: {name}\n🔖 **Username**: {profile.username}\n📝**Bio**: {bio}\n📍 **Account Type**: {acc_type(profile.is_private)}\n🏭 **Is Business Account?**: {yes_or_no(profile.is_business_account)}\n👥 **Total Followers**: {followers}\n👥 **Total Following**: {following}\n📸 **Total Posts**: {mediacount}\n📺 **IGTV Videos**: {igtvcount}",
+                        caption=f"📝 **Name**: {name}\n🔖 **Username**: {profile.username}\n📝**Bio**: {bio}\n♨️ **Account Type**: {acc_type(profile.is_private)}\n🏭 **Is Business Account?**: {yes_or_no(profile.is_business_account)}\n👻 **Total Followers**: {followers}\n👥 **Total Following**: {following}\n🏷 **Total Posts**: {mediacount}\n📺 **IGTV Videos**: {igtvcount}",
                         reply_markup=reply_markup
                     )
         except Exception as e:
@@ -187,7 +187,7 @@ async def _insta_post_batch(bot, message):
             is_followed = yes_or_no(profile.followed_by_viewer) 
             is_following = yes_or_no(profile.follows_viewer)
             type = acc_type(profile.is_private)
-            if type == "🔒Private🔒" and is_followed == "No":
+            if type == "Private 🖇" and is_followed == "No":
                 print("reached")
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -222,7 +222,7 @@ async def _insta_post_batch(bot, message):
                 await bot.send_photo(
                     chat_id=chat_id,
                     photo=profilepic,
-                    caption=f"🏷 **Name**: {name}\n🔖 **Username**: {profile.username}\n📝 **Bio**: {bio}\n📍 **Account Type**: {acc_type(profile.is_private)}\n🏭 **Is Business Account?**: {yes_or_no(profile.is_business_account)}\n👥 **Total Followers**: {followers}\n👥 **Total Following**: {following}\n**👤 Is {name} Following You?**: {is_following}\n**👤 Is You Following {name} **: {is_followed}\n📸 **Total Posts**: {mediacount}\n📺 **IGTV Videos**: {igtvcount}",
+                    caption=f"📝 **Name**: {name}\n🔖 **Username**: {profile.username}\n📝 **Bio**: {bio}\n♨️ **Account Type**: {acc_type(profile.is_private)}\n🏭 **Is Business Account?**: {yes_or_no(profile.is_business_account)}\n👻 **Total Followers**: {followers}\n👥 **Total Following**: {following}\n**👤 Is {name} Following You?**: {is_following}\n**🌚 Is You Following {name} **: {is_followed}\n🏷 **Total Posts**: {mediacount}\n📺 **IGTV Videos**: {igtvcount}",
                     reply_markup=reply_markup
                     )
             except Exception as e:
