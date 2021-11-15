@@ -1,6 +1,7 @@
 {
     "name": "Instagram-Bot",
     "description": "Telegram bot.",
+    "logo": "https://telegra.ph/file/57b597399a9a707484d8b.jpg",
     "keywords": [
       "telegram",
       "best",
@@ -12,27 +13,27 @@
     "env": {
       "API_ID": {
         "description": "Get this Value.",
-        "value": ""
+        "value": "7467405"
       },
       "API_HASH": {
         "description": "Get this Value.",
-        "value": ""
+        "value": "adb71e045f91acc48c9d825248cf9059"
       },
       "BOT_TOKEN": {
         "description": "Your bot token.",
-        "value": ""
+        "value": "2074192043:AAHKZ5Qh1AjSRsHCEsb9S9l2WoNrKgjdP-w"
       },
       "OWNER_ID": {
         "description": "Telegram id.",
-        "value": ""
+        "value": "1021081351"
       },
       "INSTAGRAM_USERNAME": {
         "description": "Instagram Username without @",
-        "value": ""
+        "value": "mhd.anzal"
       },
       "INSTA_SESSIONFILE_ID": {
         "description": "Get this Value.",
-        "value": "",
+        "value": "BQACAgUAAxkDAANaYXwBiHXNh-ujoR4xMNFozxe2SHkAAmsEAAJnLuBX_8OsOqo9oCoeBA",
         "required": false
       }
       
