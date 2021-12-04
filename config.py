@@ -11,7 +11,7 @@ class Config:
     STATUS = set(int(x) for x in (S).split())
     L=Instaloader()
     HELP="""
-<b>Sorry, I Can't Help You!</b>
+<b>You Need Help? Click <a href='https://t.me/adhavabiriyanikittiyaalo/5'>Here</a></b>
 
 """
     HOME_TEXT = """
